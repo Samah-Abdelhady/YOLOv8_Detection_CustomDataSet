@@ -36,7 +36,7 @@ It is better to create a virtual environment first, then work with YOLOv8 inside
 	 ```
 	* From terminal:
 	 ```
-	    yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=100 imgsz=640
+	    yolo task=detect mode=train model=yolov8n.pt data=path_of_data.yaml epochs=100 imgsz=640
 	 ```
 4. Validate the model:
 	* From python script:
@@ -47,7 +47,7 @@ It is better to create a virtual environment first, then work with YOLOv8 inside
 	 ```
 	* From terminal:
 	 ```
-	    yolo task=detect mode=val model="model_path/best.pt" data=data.yaml
+	    yolo task=detect mode=val model=model_path/best.pt data=path_of_data.yaml
 	 ```
 
 5. Test the model:
@@ -59,6 +59,6 @@ It is better to create a virtual environment first, then work with YOLOv8 inside
 	 ```
 	* From terminal:
 	 ```
-	   yolo task=detect mode=predict model=best_model_path.pt conf=0.50 source=test_images_folder/OR/"image.png"
+	   yolo task=detect mode=predict model=best_model_path.pt conf=0.50 source=test_images_folder/OR/image_path.png
 	 ```
 
